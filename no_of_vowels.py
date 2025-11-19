@@ -3,5 +3,5 @@ counter=0
 vowels='aeiouAEIOU'
 for ch in s:
     if ch in vowels:
-        count+=1
-print(count)
+        counter+=1
+print(counter)
