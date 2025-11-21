@@ -7,4 +7,3 @@ for x in arr:
         freq[x] = 1
 for key in freq:
     print(key,freq[key])
-print(freq)
