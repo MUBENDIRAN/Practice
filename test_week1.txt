@@ -16,3 +16,29 @@ class Solution(object):
 
         return rev
 
+palindrome
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        n = x
+        org=n
+        rev=0
+
+        while n > 0:
+            N = n % 10
+            rev = rev*10 + N
+            n = n // 10
+
+        if org == rev:
+            return True
+        else:
+            return False
+
+Richest customer 
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        rich = 0
+        for i in accounts:
+            yes = sum(i)
+            if yes > rich:
+                rich = yes
+        return rich  
