@@ -6,5 +6,5 @@ for x in arr:
     else:
         freq[x] = 1
 for key in freq:
-    if freq[x] > 1:
+    if freq[key] > 1:
         print(key)
