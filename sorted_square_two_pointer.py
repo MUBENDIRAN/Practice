@@ -10,5 +10,5 @@ while left <= right:
     else:
         result[pos] = arr[right] * arr[right]
         right -= 1
-pos -= 1
+    pos -= 1
 print(result)
