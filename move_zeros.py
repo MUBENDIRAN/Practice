@@ -6,7 +6,7 @@ for i in range(len(arr)):
     if arr[i] != 0:
         arr[pos] = arr[i]
         pos += 1
-# this loop creates the empty space at last according to list created 
+# this loop creates the empty space at last according to list created   
 for i in range(pos,len(arr)):
         arr[i] = 0
 print(arr)
