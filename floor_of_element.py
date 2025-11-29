@@ -7,7 +7,7 @@ while left <= right:
     mid = (left + right) // 2
     if arr[mid] <= target:
         floor_val = arr[mid]
-        right = mid - 1
-    else:
         left = mid + 1
+    else:
+        right = mid - 1
 print(floor_val)
