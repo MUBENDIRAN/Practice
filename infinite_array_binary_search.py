@@ -12,6 +12,7 @@ while arr[right] < len(arr) and arr[right] < target:
             break
         elif arr[mid] < target:
             left = mid + 1
-        else:
+        elif arr[mid] > target:
             right = mid - 1
-print(-1)
+        else:
+            print(-1)
