@@ -110,4 +110,23 @@ class Solution:
             else:
                 right = mid - 1
         return first,last
-             
+FIRST NEGATIVES INTEGER OF K
+#User function Template for python3
+
+class Solution:
+    def firstNegInt(self, arr, k): 
+        negatives = []
+        start = 0
+        ans = []
+        for end in range(0,len(arr)):
+            if arr[end] < 0:
+                negatives.append(end)
+            if end - start + 1 == k:
+                if negatives:
+                    ans.append(arr[negatives[0]])
+                else:
+                    ans.append(0)
+                if negatives and negatives[0] == start:
+                    negatives.pop(0)
+                start+=1
+        return ans
