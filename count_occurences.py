@@ -13,7 +13,7 @@ while left <= right:
     else:
         right = mid - 1
 left = 0
-right = len(arr) - 1
+right = len(arr) - 1  
 last = -1
 while left <= right:
     mid = (left + right) // 2
