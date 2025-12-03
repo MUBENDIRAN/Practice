@@ -1,3 +1,4 @@
+arr = list(map(int,input().split()))
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -20,7 +21,7 @@ def merge_sort(arr):
         result.append(sorted_left[i])
         i += 1
     while j < len(sorted_right):
-        result.append(sorted_right[i])
+        result.append(sorted_right[j])
         j += 1
     return result
-
+print(merge_sort(arr))
