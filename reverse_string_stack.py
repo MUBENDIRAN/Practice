@@ -4,5 +4,5 @@ for ch in s:
     stack.append(ch)
 rev = ""
 while stack:
-    stack.pop()
+    rev += stack.pop()
 print(rev)
