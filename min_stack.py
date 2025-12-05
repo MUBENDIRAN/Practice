@@ -1,7 +1,3 @@
-arr = list(map(int,input().split()))
-ms = Minstack(arr)
-for x in arr:
-    ms.push(x)
 class Minstack:
     def __init__(self,arr):
         self.st = []
@@ -23,4 +19,8 @@ class Minstack:
 
     def getMin(self):
         return self.min_st[-1]
+arr = list(map(int,input().split()))
+ms = Minstack(arr)
+for x in arr:
+    ms.push(x)
 print(ms.top(),ms.getMin())       
