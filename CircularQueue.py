@@ -35,10 +35,10 @@ class CircularQueue:
         if self.size == 0:
             self.front = -1
             self.rear = -1
-    # this function return the first element in the front
+    # this function return the first element in the current front
     def front(self):
         return self.arr[self.front]
-    # this function returns the last element in the back (rear)
+    # this function returns the last element in the current back (rear)
     def rear(self):
         return self.arr[self.rear]
     # this function is optional but still usefull this check the queue is empty or not
