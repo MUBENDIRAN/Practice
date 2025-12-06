@@ -1,4 +1,5 @@
 from collections import dequeue
+q = deque()
 def reverseQueue(q):
     st =  []
 
