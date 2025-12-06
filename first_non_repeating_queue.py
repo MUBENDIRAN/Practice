@@ -1,5 +1,5 @@
 from collections import deque
-stream = list(map(int,input().strip()))
+stream = list(map(int,input().split()))
 def firstNonRepeating(stream):
     q = deque()
     freq = {}
@@ -15,3 +15,5 @@ def firstNonRepeating(stream):
         print(q[0])
     else:
         print(-1)
+
+firstNonRepeating(stream)
