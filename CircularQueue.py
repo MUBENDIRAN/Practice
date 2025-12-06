@@ -1,4 +1,4 @@
-# we used class since we need three function with three different working
+# we used class since we used different functions with different use cases 
 class CircularQueue:
     # this functions manages the initial pointer setup capacity size decisions
     def __init__(self,capacity):
@@ -35,3 +35,15 @@ class CircularQueue:
         if self.size == 0:
             self.front = -1
             self.rear = -1
+    # this function return the first element in the front
+    def front(self):
+        return self.arr[self.front]
+    # this function returns the last element in the back (rear)
+    def rear(self):
+        return self.arr[self.rear]
+    # this function is optional but still usefull this check the queue is empty or not
+    def isEmpty(self):
+        return self.size == 0
+    # this function is optional too this checks the queue is full or not 
+    def isFull(self):
+        return self.size == self.capacity
