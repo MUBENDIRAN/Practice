@@ -1,12 +1,11 @@
 from collections import deque
 arr = list(map(int,input().split()))
-arr = q
-q = deque()
+q = deque(arr)
 def reverseQueue(q):
     st =  []
 
     while q:
-        value = q.pop()
+        value = q.popleft()
         st.append(value)
 
     while st:
@@ -14,3 +13,4 @@ def reverseQueue(q):
         q.append(value)
 
 reverseQueue(q)
+print(*q)
