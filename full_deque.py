@@ -32,7 +32,7 @@ class Deque:
             self.rear = 0
             self.size += 1
             return
-        self.front = (self.front - 1 + self.capacity) % self.capacity
+        self.front = (self.front + 1 ) % self.capacity
         self.arr[self.front] = x
         self.size += 1
 
@@ -40,7 +40,7 @@ class Deque:
         if self.is_empty():
             return
         value = self.arr[self.front]
-        self.front = (self.front - 1 + self.capacity) % self.capacity
+        self.front = (self.front + 1) % self.capacity
         self.size -= 1
         if self.size == 0:
             self.front = -1
