@@ -15,6 +15,6 @@ def firstNegative(arr,k):
                 res.append(arr[dq[0]])
             else:
                 res.append(0)
-        return res
+    return res
 ans = firstNegative(arr,k)
 print(*ans)
