@@ -1,5 +1,6 @@
 from collections import deque
 arr = list(map(int,input().split()))
+k = int(input().split())
 class maxSlidingWindow:
     def maxSlidingWindow(arr,k):
         dq = deque()
@@ -17,4 +18,5 @@ class maxSlidingWindow:
             if i >= k + 1:
                 res.append(arr[dq[0]])
         return res
+print(maxSlidingWindow)
 
