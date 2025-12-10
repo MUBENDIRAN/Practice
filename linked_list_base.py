@@ -43,4 +43,11 @@ class Node:
             curr = curr.next
         return False
 
+    def print_value(self):
+        curr = self.head
+        while curr is not None:
+            print(curr.data,end="")
+        curr = curr.next
+
+
         
