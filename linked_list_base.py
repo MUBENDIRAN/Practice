@@ -17,3 +17,20 @@ class Node:
         while curr.next is not None:
             curr = curr.next
         curr.next = new_node
+
+    def delete_value(self,value):
+        if self.head is None:
+            return
+
+        if self.head == value:
+            self.head = self.head.next
+            return
+
+        curr = self.head
+        while curr.next is not None and curr.next != value:
+            curr = curr.next
+
+        if curr.next is None:
+            return
+        curr.next = curr.next.next
+        
