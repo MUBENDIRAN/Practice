@@ -33,4 +33,14 @@ class Node:
         if curr.next is None:
             return
         curr.next = curr.next.next
+
+    def search(self,value):
+        curr = self.head
+
+        while curr is not None:
+            if curr == value:
+                return True
+            curr = curr.next
+        return False
+
         
