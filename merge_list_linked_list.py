@@ -4,11 +4,11 @@ def merge_list(self,head1,head2):
 
     while head1 is not None and head2 is not None:
         if head1 < head2:
-            tail = head1
-            tail = tail.next
+            tail.next = head1
+            head1 = head1.next
         else:
-            tail = head2
-            tail = tail.next
+            tail.next = head2
+            head2 = head2.next
 
     tail = tail.next
 
@@ -16,3 +16,4 @@ def merge_list(self,head1,head2):
         tail.next = head1
     else:
         tail.next = head2
+    return dummy.next
