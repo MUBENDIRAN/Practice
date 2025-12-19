@@ -3,6 +3,8 @@ public class Student{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
 
+		System.out.println("Enter the Name");
+		String name = sc.nextLine();
 		System.out.println("Enter the marks of 5 subjects(0-100):");
 		int s1 = sc.nextInt();
 		int s2 = sc.nextInt();
@@ -38,6 +40,7 @@ public class Student{
 				grade = "RA";
 				break;
 	}
+	System.out.println("Name = " + name);
 	System.out.println("Total = " + total);
 	System.out.println("Avg = " + avg);
 	System.out.println("Grade = " + grade);
