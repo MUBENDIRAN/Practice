@@ -18,6 +18,13 @@ def preorder(root):
     preorder(root.left)
     preorder(root.right)
 
+def postorder(root):
+    if root is None:
+        return
+    preorder(root.left)
+    preorder(root.right)
+    print(root.val,end=" ")
+
 
 
 root = tree(10)
@@ -28,4 +35,6 @@ inorder(root)
 print("inorder")
 preorder(root)
 print("preorder")
+postorder(root)
+print("postorder")
             
