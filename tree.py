@@ -27,7 +27,7 @@ def postorder(root):
     print(root.val,end=" ")
 # define the values of the root and child
 root = tree(10)
-root.left = tree(5)
+root.left = tree(50)
 root.right = tree(15)
 # calling the functions 
 inorder(root)
