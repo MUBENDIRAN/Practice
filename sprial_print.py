@@ -30,7 +30,16 @@ def sprial_print(matrix):
 
     return result 
 
-matrix = [[1,2,3],[4,5,6],[7,8,9]]
+rows  = int(input("Enter the number of rows :"))
+column = int(input("Enter the number of column :"))
+
+matrix = []
+print("Enter the space separated row values :")
+for i in range(rows):
+    rows = list(map(int,input().split()))
+    if len(rows) != column:
+        raise ValueError("Row must be exactcly {} element".format(column))
+    matrix.append(rows)
 
 print(sprial_print(matrix))
     
