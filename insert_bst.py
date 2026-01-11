@@ -16,12 +16,30 @@ def insert(root,val):
 
     return root
 # this function is used to get the tree after the insertion but its sorted you can try some other too 
-def inorder(root):
+'''def inorder(root):
     if root is None:
         return 
     inorder(root.left)
     print(root.val,end=" ")
-    inorder(root.right)
+    inorder(root.right) '''
+def path_print(root,val):
+    path = []
+    curr = root
+
+    while curr is not None:
+        path.append(curr.val)
+
+        if val == curr.val:
+            return path
+
+        if val < curr.val:
+            curr = curr.left
+        else:
+            curr = curr.right
+
+    return None
+        
+
 # values of root and child are created and constructor runs when created 
 root = tree(8)
 root.left = tree(3)
@@ -32,6 +50,11 @@ val = 13
 # this runs the insert function 
 insert(root,val)
 print("final path :",end=" ")
-# this runs the inorder function 
+path = path_print(root,val)
+if path is not None:
+    print(*path)
+else:
+    print("Value not found")
+'''this runs the inorder function 
 inorder(root)
-print()
+print()'''
