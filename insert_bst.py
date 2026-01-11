@@ -46,7 +46,7 @@ root.left = tree(3)
 root.right = tree(10)
 root.right.right = tree(14)
 # value to be inserted
-val = 13
+val = int(input("Enter the value to be inserted to the tree :"))
 # this runs the insert function 
 insert(root,val)
 print("final path :",end=" ")
