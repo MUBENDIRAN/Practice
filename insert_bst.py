@@ -22,6 +22,7 @@ def insert(root,val):
     inorder(root.left)
     print(root.val,end=" ")
     inorder(root.right) '''
+# this function append the nodes after the insertion and give the final inserted path
 def path_print(root,val):
     path = []
     curr = root
@@ -50,6 +51,7 @@ val = int(input("Enter the value to be inserted to the tree :"))
 # this runs the insert function 
 insert(root,val)
 print("final path :",end=" ")
+# the final path print function is called and checked before print with condition 
 path = path_print(root,val)
 if path is not None:
     print(*path)
