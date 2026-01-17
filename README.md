@@ -1,25 +1,18 @@
-# Python Practice
+# Python DSA Practice
 
-A collection of Python scripts for practicing Data Structures and Algorithms (DSA).
+This repository contains my personal collection of Data Structures and Algorithms problems practiced in Python, focusing on OOP principles.
 
 ## Topics Covered
 
-### Data Structures
-- **Linked Lists**: Implementation, reversal, cycle detection, and merging.
-- **Stacks & Queues**: Valid parentheses, min stack, circular queues, and deques.
-- **Binary Trees**: Basic implementation and traversals.
+### Data Structures (OOP based)
+*   **Linked Lists**: Implementation, Cycle Detection/Removal, Reversal, Palindrome, Merging, and Nth element.
+*   **Trees & BST**: Binary Tree, Level Order, BST (Insert, Search, Validate), LCA, Diameter, and Height.
+*   **Stacks & Queues**: LRU Cache, Min Stack, Circular Queue, and Deques.
 
 ### Algorithms
-- **Sorting**: Bubble sort, insertion sort, selection sort, merge sort, and quick sort.
-- **Searching**: Binary search variations (rotated arrays, infinite arrays, floor/ceil).
-- **Sliding Window**: Maximum sum subarray, longest substring without repeating characters.
-- **Two Pointers**: Moving zeros, sorted squares, and duplicate removal.
-- **Math & Basic Logic**: Primality testing, palindromes, and array manipulations.
-
-## Usage
-
-Each script is self-contained and can be run using Python 3:
-
-```bash
-python3 filename.py
-```
+*   **Sorting**: Bubble, Selection, Insertion, Merge, and Quick Sort.
+*   **Searching**: Binary Search (Rotated, Infinite, Square Root).
+*   **Dynamic Programming**: Fibonacci, Climbing Stairs, Buy/Sell Stock.
+*   **Sliding Window**: Maximum Sum Subarray, Longest Substring, First Negative Integer.
+*   **Two Pointers**: Two Sum, Move Zeros, Sorted Squares, Remove Duplicates.
+*   **Miscellaneous**: Matrix Rotation, Spiral Print, Group Anagrams, and recursion problems.
